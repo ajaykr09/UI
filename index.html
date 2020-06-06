@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="java.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: linear-gradient(to right, #9c27b0, #8ecdff);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: linear-gradient(to right, #9c27b0, #8ecdff);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: linear-gradient(to right, #9c27b0, #8ecdff);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: linear-gradient(to right, #9c27b0, #8ecdff);;
+   padding: 20px;
+   margin-top: 20px;
+   border-style:solid ;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to right, #9c27b0, #8ecdff);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+.imgdiv1 img{
+    width: 640px;
+    height: 400px;
+}
+.imgdiv2 img{
+    width: 580px;
+    height: 270px;
+}
+.imgdiv3 img{
+    width: 240px;
+    height: 135px;
+
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Ajay's</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>~My blog~</h2>
+      <h5>Friday, June 5, 2020</h5>
+      <div class="imgdiv1"><img src="images/01.jpg" alt="" ></div>
+      <p>Welcome to a blog about my life!</p>
+      <p>Hello I'm Ajay. And you're probably reading this blog cuz you're really bored. Ugh, this lockdown has really taken the toll on us. But ene during these hard times we must not lose hope.</p>
+    </div>
+    <div class="card">
+      <h2>~My Hobbies~</h2>
+      <h5>Saturday, June 6, 2020</h5>
+      <div class="imgdiv2"><img src="images/03.png" alt="" ></div>
+      <p>Life</p>
+      <p>My hobbies include gaming, memeing, sleeping. Pretty basic stuff right?. I really love hanging out with friends too!. You should hit me up and tell me about your hobbies too!</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>~About Me~</h2>
+      <div class="imgdiv3"><img src="images/04.png" alt="" ></div>
+      <p>Well i've pretty much told you everything already lol. I'm 18, and I study computer science engineering at Amrita University in Kerala. I was born in Kerala and had move around a lot before settling down in Hyderabad. </p>
+    </div>
+    <div class="card">
+      <h3><center>Heyooo!</center></h3>
+      <h1 id="question"></h1>
+     <center> <button id="runbtn" type="button" onclick="func()">GO!</button></center>
+    </div>
+    <div class="card">
+      <h3>Hit me up at</h3>
+      <p>Email:<a href="mailto: thisisnotmyemail@gmail.com"> NotMyEMail</a></p>
+      <p>Phno: 4204206969</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Copyright © 2020 Ajay Inc. All rights reserved.</p>
+</div>
+
+</body>
+</html>
